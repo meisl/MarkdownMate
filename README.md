@@ -10,7 +10,7 @@ Create/edit (rather simple & static) html pages with minimal effort, e.g. for gi
 * have the user input Markdown, github-flavour (GFM)
 * enable drag-n-drop whereever reasonable (most importantly: images and links)
 * provide option to generate completely stand-alone html-output, ie.:
-  - all images embedded (data-url), *including favicon*
+  - **images embedded via data-url**, *including favicon*
   - **NO** javascript in result
   - **NO** css *dependency* in result
   
