@@ -1,7 +1,7 @@
---check-leaks
+# --check-leaks
 --colors
 --reporter list
-# --recursive
+--recursive
 --watch
 --exclude test/fixtures/**/*
---exclude test/browser/**/*
+# --exclude test/browser/**/*

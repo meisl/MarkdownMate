@@ -1,5 +1,7 @@
 'use strict';
 
+(function () {
+
 const expect = require('expect.js');
 
 
@@ -11,3 +13,6 @@ describe('Test environment', function () {
 	});
 
 });
+
+}());
+

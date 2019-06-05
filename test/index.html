@@ -4,19 +4,30 @@
     <meta charset="utf-8" />
     <title>Mocha Tests</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
   </head>
   <body>
     <div id="mocha"></div>
 
-    <script src="../../node_modules/expect.js/index.js"></script>
-    <script src="../../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/expect.js/index.js"></script>
+    <script src="../node_modules/mocha/mocha.js"></script>
+
+    <script src="../node_modules/showdown/dist/showdown.min.js"></script>
 
     <script class="mocha-init">
       mocha.setup('bdd');
       mocha.checkLeaks();
+
+	  function require(x) {
+		switch (x) {
+			case 'expect.js': return this.expect;
+			case 'showdown': return this.showdown;
+		};
+	  }
     </script>
     <script src="test-env-test.js"></script>
+    
+    <script src="showdown-test.js"></script>
     
 	<script class="mocha-exec">
       mocha.run();
