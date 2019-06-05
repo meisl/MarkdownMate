@@ -1,0 +1,25 @@
+{
+  "name": "pagemate",
+  "version": "0.0.1",
+  "description": "mini in-browser CMS",
+  "main": "main.js",
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meisl/pagemate.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "meisl",
+  "license": "ISC",
+  "dependencies": {
+    "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0"
+  }
+}

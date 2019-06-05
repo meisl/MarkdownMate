@@ -1,3 +1,18 @@
+## Getting started
+### For development
+* Clone the repo and install dev-dependencies:
+	```
+
+		git clone git://github.com/meisl.pagemate.git pagemate
+		cd pagemate && npm install
+
+	```
+* Run tests
+  - Browser: open [`test/browser-test.html`](../test/browser-test.html)
+  - Node: `npm test`
+
+## About 
+
 ### Purpose
 
 Create/edit (rather simple & static) html pages with minimal effort, e.g. for github-pages.
